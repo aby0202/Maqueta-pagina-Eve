@@ -3,34 +3,13 @@
     padding: 0%;
 }
 
-/*logo*/
-
-.logo {
-    padding: 20px;
-    background-image: url(imagenes/fondo1.jpg);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    object-fit: cover;
-    background-repeat: repeat-4;
-    font-size: 50px;
-    font-weight: 10px;
-    width: 100%;
-
-}
-
-.HeaderFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/*menu navegacion*/
+/*------------------------Menu Index--------------------*/
 
 .menu {
-    background-color: black;
-    width: 100vw;
     height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 20px;
 }
 
 .menu ul {
@@ -44,17 +23,15 @@
 }
 
 .menu ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-
-}
-
-.menu ul li a:hover {
-    background-color: rgba(51, 78, 30, 0.555);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px black;
 }
 
 .NavFlex {
@@ -64,203 +41,371 @@
     flex-wrap: wrap;
 }
 
-
-/*imagen*/
-
-.ImgIndex Img {
-    height: auto;
-    width: 100%;
+.menu ul li a:hover {
+    background-color: rgba(51, 78, 30, 0.555);
 }
 
-/*redes*/
-
-.SectionFlex {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    align-items: flex-start;
+.menu {
+    animation-name: efectoMenu;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
 
-section.redes {
-    background-color: rgba(240, 248, 255, 0.863);
-    height: 80px;
-    width: 100%;
-    font-size: 30px;
-    padding-top: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+@keyframes efectoMenu {
+
+    0% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
 }
 
-/*contenido texto*/
+/*------------------Imagenes Index--------------*/
 
-.TextoFlex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+.contenedorImagenes {
+    height: 900px;
 }
 
-.contenido {
-    background-color: rgba(255, 255, 255, 0.815);
-    margin-top: 120px;
-    padding: 50px;
-    color: black;
-    margin-bottom: 120px;
-}
-
-.caja {
-    width: 800px;
-}
-
-/*aca empieza video y tabla*/
-
-.caja1 {
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    margin: 20px;
-
-}
-
-h2 {
-    font-family: 'Roboto Serif', serif;
-    font-weight: 100;
-    text-align: center;
-}
-
-th,
-tr,
-table {
-
-    border: solid 1px aliceblue;
-    width: 630px;
+.imagen1 {
+    height: 400px;
+    width: 900px;
     min-width: auto;
-    height: 60px;
     min-height: auto;
-    margin-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border: solid 3px whitesmoke;
+    box-shadow: 10px 10px 10px rgb(24, 22, 22);
+
 }
 
-.caja2 {
-    display: inline;
-    width: 630px;
-    min-width: auto;
-    height: 385px;
-    min-height: auto;
-}
-
-.caja2 iframe {
+.imagen1 video {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
-.tabv {
-    background-color: rgb(2, 2, 2);
-    padding: 40px;
-    margin-bottom: 120px;
+
+
+.imagen2 {
+    background-image: url(imagenes/imagen3.jpg);
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    padding-top: 5px;
+    border: solid 3px whitesmoke;
+    box-shadow: 10px 10px 10px rgb(19, 18, 18);
 }
 
-.PartFlex {
+
+.imagen2 p {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    line-height: 30px;
+    font-size: 15px;
+    margin: 40px;
+    background-color: rgba(19, 110, 80, 0.534);
+
+}
+
+.imagen2:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.contenedorImagenes {
+    height: auto;
+}
+
+body{
+    background-color: black;
+}
+
+/*------------------------Menu Inicio--------------------*/
+
+.menu {
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.NavFlex {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
+.menu ul li a:hover {
+    background-color: rgba(51, 78, 30, 0.555);
+}
 
-/*footer*/
+.menu {
+    animation-name: efectoMenu;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
 
-.footer {
+
+@keyframes efectoMenu {
+
+    0% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*------------------Imagenes Inico--------------*/
+
+.contenedorImagenes {
+    height: 900px;
+}
+
+.imagen1 {
+    height: 400px;
+    width: 900px;
+    min-width: auto;
+    min-height: auto;
+    border: solid 3px whitesmoke;
+    box-shadow: 10px 10px 10px rgb(24, 22, 22);
+
+}
+
+.imagen1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.imagen2 {
+    background-image: url(imagenes/imagen3.jpg);
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    padding-top: 5px;
+    border: solid 3px whitesmoke;
+    box-shadow: 10px 10px 10px rgb(19, 18, 18);
+}
+
+
+.imagen2 p {
     color: aliceblue;
-    width: 100vw;
-    height: 220px;
-    margin-top: 120px;
-    background-image: url(imagenes/fondo1.jpg);
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    line-height: 30px;
+    font-size: 15px;
+    margin: 40px;
+    background-color: rgba(19, 110, 80, 0.534);
+
 }
 
-h2.footerLogo {
-    color: aliceblue;
-    font-size: 60px;
-    margin-left: 80px;
-    margin-top: 80px;
-    font-weight: 1;
+.imagen2:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
-.cont {
-    margin-top: 60px;
-    margin-right: 160px;
-    margin-bottom: 0px;
+.contenedorImagenes {
+    height: auto;
 }
 
-.imagen {
-    width: 50px;
+/*---------aside--------*/
+.aside {
+    height: 1000px;
+    min-height: auto;
+    animation-name: aside;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
-.foo {
-    color: rgb(238, 231, 231);
-    font-size: 20px;
-    margin-top: 0px;
+@keyframes aside {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.ContFlex {
-    align-items: flex-end;
-}
-
-.FooterFlex {
+.redes {
     display: flex;
-    justify-content: space-between;
+    color: antiquewhite;
     align-items: center;
+    font-size: 60px;
+    font-weight: 100;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-shadow: 5px 5px 5px rgb(24, 24, 24);
+
 }
 
-/*------------Vista Desktop Index--------------*/
+/*----------cajas---------*/
+.flex {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texto {
+    background-color: rgb(190, 190, 192);
+    background-image: url(imagenes/imagen3.jpg);
+    height: 300px;
+    width: 500px;
+    margin: 20px;
+}
+
+.texto {
+    animation-name: rebotar;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rebotar {
+
+    50% {
+        opacity: 1;
+        transform: translateY(5px);
+        box-shadow: 10px 10px 10px rgba(63, 62, 62, 0.637);
+    }
+
+}
+
+
+/*---------footer----------*/
+footer {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoFooter {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+}
+
+.logoFooter h2 {
+    color: rgb(187, 117, 25);
+    font-family: 'Square Peg', cursive;
+    font-size: 200px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 175px;
+    text-shadow: 5px 5px 5px rgb(34, 33, 33);
+}
+
+.imgFooter {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    min-height: auto;
+    min-width: auto;
+}
+
+.contenedorImg {
+    height: 100px;
+    min-height: auto;
+    width: 250px;
+    min-width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    height: 50px;
+    width: 250px;
+    margin: auto;
+    color: rgb(20, 83, 39);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 50px;
+}
+
+/*--------------------------------------------------------RESPONSIVE--------------------------------------------*/
+/*------------Vista Desktop Inicio--------------*/
 @media only screen and (min-width: 1024px) {
 
-    /* index */
-    body {
-        background-color: rgb(0, 0, 0);
-    }
+    /* inicio */
 
-
-    /*-----------GRID INDEX----------*/
-
-
-
-    .ContenedorPadre {
+    .grid {
         display: grid;
         grid-template-areas:
-            "header header header header header header"
-            "nav nav nav nav nav nav"
-            "section section section section section section"
-            "img img img img img img"
-            "texto texto texto texto texto texto"
-            "tabla tabla tabla tabla tabla tabla"
-            "footer footer footer footer footer footer";
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: auto auto auto auto auto auto;
+            "nav nav nav"
+            "imagen imagen aside"
+            "texto texto  texto"
+            "footer footer footer";
+        grid-template-columns: repeat(2, 1fr), 300px;
+        grid-template-rows: repeat(4, auto);
     }
 
-    header {
-        grid-area: header;
-    }
 
     nav {
         grid-area: nav;
     }
 
-    section {
-        grid-area: section;
+    .contenedorImagenes {
+        grid-area: imagen;
     }
 
-    div .ImgIndex {
-        grid-area: img;
+    aside {
+        grid-area: aside;
+
     }
 
-    div .contenido {
+    .flex {
         grid-area: texto;
-    }
-
-    div .tabv {
-        grid-area: tabla;
     }
 
     footer {
@@ -268,16 +413,189 @@ h2.footerLogo {
     }
 
 
-    .HeaderFlex {
-        display: flex;
-        align-items: center;
+    .imagen1 {
+        margin-left: 100px;
+        margin-top: 100px;
+        
     }
 
-    .NavFlex {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+
+    .imagen2 {
+        transform: translate(900px, -50px);
+        width: 500px;
+        height: 400px;
     }
+
+    .redes {
+        flex-direction: column;
+    }
+}
+
+/*--------------------Vista Tablet Inicio-----------*/
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    /* inicio */
+   
+    .imagen1 {
+        margin-left: 50px;
+        margin-top: 100px;
+        height: 300px;
+        width: 600px;
+    }
+
+    .imagen2 {
+        transform: translate(400px, -40px);
+        width: 350px;
+        height: 550px;
+    }
+
+    .menu ul li a{
+        font-size: 23px;
+    }
+
+}
+
+/*-----Vista Mobile Inicio------*/
+
+@media only screen and (max-width: 767px) {
+ 
+    .imagen1 {
+        margin: auto;
+        margin-top: 50px;
+        height: 300px;
+        width: 600px;
+        min-width: 200px;
+        min-height: 100px;
+    }
+
+    .imagen2 {
+        width: 400px;
+        height: 500px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+     .menu ul li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .menu{
+        margin-bottom: 20px;
+    }
+}
+
+/*---------------------------------------------------INDEX---------------------------------------------------*/
+
+
+.contenedor{
+    height: 95%;
+    width: 95%;
+}
+
+.caja2{
+    width: 400px;
+    height: 300px;
+    background-image: url(imagenes/imagen3.jpg);
+    color: aliceblue;
+}
+
+.logoEntrada{
+    font-family: 'Square Peg', cursive;
+    font-size: 200px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.enlace{
+    background-color: rgb(13, 139, 80);
+    height: 60px;
+    width: 250px;
+    margin: auto;
+  
+}
+
+.enlace a {
+    color: aliceblue;
+    font-family: 'BIZ UDPMincho', serif;
+    font-size: 35px;
+      text-decoration: none;
+    display: block;
+    padding: 10px;
+    padding-left: 65px;
+    
+}
+.enlace:hover{
+    animation-name: click;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes click{
+    40%{
+        -webkit-transform: scale(1.1);
+    }
+    20%, 60%{
+        -webkit-transform: scale(0.8);
+    }
+}
+
+.img2{
+    width:900px;
+    height: 400px;
+}
+
+ .caja{
+    width: 600px;
+    height: 800px;
+    margin: 50px;
+ }
+
+.img1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.img1 :hover{
+    animation-name: intermitente;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes intermitente{
+    50%{
+        opacity: 1;
+    }
+    25%, 75%{
+        opacity: 0;
+    }
+}
+
+.img2 img{
+    width:100%;
+    height: 100%;
+}
+
+
+/*------------Vista Desktop Index--------------*/
+@media only screen and (min-width: 1024px) {
+
+    /* index */
+    .caja{
+    margin-left: 250px;
+}
+
+.img2{
+    transform: translate(500px,-350px);
+   
+}
+
+.caja2{
+    transform: translate(800px,-1150px);
+}
 }
 
 /*--------------------Vista Tablet Index-----------*/
@@ -285,142 +603,47 @@ h2.footerLogo {
 @media only screen and (min-width: 768px) and (max-width:1023px) {
 
     /* index */
-    body {
-        background-color: rgb(0, 0, 0);
+    .caja{
+        width: 400px;
+        height: 600px;
     }
 
-    .ContenedorPadre {
-        display: grid;
-        grid-template-areas:
-            "header header header header header header"
-            "nav nav nav nav nav nav"
-            "section section section section section section"
-            "img img img img img img"
-            "texto texto texto texto texto texto"
-            "tabla tabla tabla tabla tabla tabla"
-            "footer footer footer footer footer footer";
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: auto auto auto auto auto auto;
-    }
-
-    header {
-        grid-area: header;
-    }
-
-    nav {
-        grid-area: nav;
-    }
-
-    section {
-        grid-area: section;
-    }
-
-    div .ImgIndex {
-        grid-area: img;
-    }
-
-    div .contenido {
-        grid-area: texto;
-    }
-
-    div .tabv {
-        grid-area: tabla;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-    .HeaderFlex {
-        display: flex;
-        align-items: center;
-    }
-
-    .NavFlex {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
+ .img2{
+    width: 0;
+    height: 0;
 }
-
+ 
+.caja2{
+    transform: translate(300px,-90px);
+}
+}
 /*-----Vista Mobile Index------*/
 
 @media only screen and (max-width: 767px) {
-    body {
-        background-color: rgb(0, 0, 0);
-    }
 
-    .ContenedorPadre {
-        display: grid;
-        grid-template-areas:
-            "header header header"
-            "nav nav nav"
-            "section section section"
-            "img img img"
-            "texto texto texto"
-            "tabla tabla tabla"
-            "footer footer footer";
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto;
-    }
 
-    header {
-        grid-area: header;
-    }
+     .img2{
+    width: 0;
+    height: 0;
+}
 
-    nav {
-        grid-area: nav;
-    }
+.caja{
+    margin: auto;
+    width: 500px;
+    height: 700px;
+}
 
-    section {
-        grid-area: section;
-    }
+.caja2{
+    margin: auto;
+}
 
-    div .ImgIndex {
-        grid-area: img;
-    }
-
-    div .contenido {
-        grid-area: texto;
-    }
-
-    div .tabv {
-        grid-area: tabla;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-    .HeaderFlex {
-        display: flex;
-        align-items: center;
-    }
-
-    .NavFlex {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .menu ul li {
-        display: block;
-        padding: 10px;
-        text-align: center;
-    }
-
-    table {
-
-        width: auto;
-        height: auto;
-
-    }
-
-    /*aca quiero cambiar la imagen de eve.jpeg, buscar la manera
-quiero que el footer quede igual a como la vista desktop*/
+.contenedor{
+    padding-top: 40px;
+}
 
 }
+
+
 
 /*---------------------------------------------------MEDIA---------------------------------------------------*/
 .media {
