@@ -1,0 +1,780 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*logo*/
+
+.logo {
+    padding: 20px;
+    background-image: url(imagenes/fondo1.jpg);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    object-fit: cover;
+    background-repeat: repeat-4;
+    font-size: 50px;
+    font-weight: 10px;
+    width: 100%;
+
+}
+
+.HeaderFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*menu navegacion*/
+
+.menu {
+    background-color: black;
+    width: 100vw;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.menu ul li a:hover {
+    background-color: rgba(51, 78, 30, 0.555);
+}
+
+.NavFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/*imagen*/
+
+.ImgIndex Img {
+    height: auto;
+    width: 100%;
+}
+
+/*redes*/
+
+.SectionFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+section.redes {
+    background-color: rgba(240, 248, 255, 0.863);
+    height: 80px;
+    width: 100%;
+    font-size: 30px;
+    padding-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*contenido texto*/
+
+.TextoFlex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenido {
+    background-color: rgba(255, 255, 255, 0.815);
+    margin-top: 120px;
+    padding: 50px;
+    color: black;
+    margin-bottom: 120px;
+}
+
+.caja {
+    width: 800px;
+}
+
+/*aca empieza video y tabla*/
+
+.caja1 {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 20px;
+
+}
+
+h2 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+th,
+tr,
+table {
+
+    border: solid 1px aliceblue;
+    width: 630px;
+    min-width: auto;
+    height: 60px;
+    min-height: auto;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.caja2 {
+    display: inline;
+    width: 630px;
+    min-width: auto;
+    height: 385px;
+    min-height: auto;
+}
+
+.caja2 iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.tabv {
+    background-color: rgb(2, 2, 2);
+    padding: 40px;
+    margin-bottom: 120px;
+}
+
+.PartFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/*footer*/
+
+.footer {
+    color: aliceblue;
+    width: 100vw;
+    height: 220px;
+    margin-top: 120px;
+    background-image: url(imagenes/fondo1.jpg);
+}
+
+h2.footerLogo {
+    color: aliceblue;
+    font-size: 60px;
+    margin-left: 80px;
+    margin-top: 80px;
+    font-weight: 1;
+}
+
+.cont {
+    margin-top: 60px;
+    margin-right: 160px;
+    margin-bottom: 0px;
+}
+
+.imagen {
+    width: 50px;
+}
+
+.foo {
+    color: rgb(238, 231, 231);
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.ContFlex {
+    align-items: flex-end;
+}
+
+.FooterFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*------------Vista Desktop Index--------------*/
+@media only screen and (min-width: 1024px) {
+
+    /* index */
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+
+    /*-----------GRID INDEX----------*/
+
+
+
+    .ContenedorPadre {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "section section section section section section"
+            "img img img img img img"
+            "texto texto texto texto texto texto"
+            "tabla tabla tabla tabla tabla tabla"
+            "footer footer footer footer footer footer";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    div .ImgIndex {
+        grid-area: img;
+    }
+
+    div .contenido {
+        grid-area: texto;
+    }
+
+    div .tabv {
+        grid-area: tabla;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+
+    .HeaderFlex {
+        display: flex;
+        align-items: center;
+    }
+
+    .NavFlex {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+/*--------------------Vista Tablet Index-----------*/
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    /* index */
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .ContenedorPadre {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "section section section section section section"
+            "img img img img img img"
+            "texto texto texto texto texto texto"
+            "tabla tabla tabla tabla tabla tabla"
+            "footer footer footer footer footer footer";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    div .ImgIndex {
+        grid-area: img;
+    }
+
+    div .contenido {
+        grid-area: texto;
+    }
+
+    div .tabv {
+        grid-area: tabla;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .HeaderFlex {
+        display: flex;
+        align-items: center;
+    }
+
+    .NavFlex {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+/*-----Vista Mobile Index------*/
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .ContenedorPadre {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "section section section"
+            "img img img"
+            "texto texto texto"
+            "tabla tabla tabla"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    div .ImgIndex {
+        grid-area: img;
+    }
+
+    div .contenido {
+        grid-area: texto;
+    }
+
+    div .tabv {
+        grid-area: tabla;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .HeaderFlex {
+        display: flex;
+        align-items: center;
+    }
+
+    .NavFlex {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .menu ul li {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    table {
+
+        width: auto;
+        height: auto;
+
+    }
+
+    /*aca quiero cambiar la imagen de eve.jpeg, buscar la manera
+quiero que el footer quede igual a como la vista desktop*/
+
+}
+
+/*---------------------------------------------------MEDIA---------------------------------------------------*/
+.media {
+    text-align: center;
+    background-color: black;
+
+}
+
+.space {
+    padding: 50px;
+}
+
+
+
+/*-------------------------------------------------NOSOTROS---------------------------------------------------------*/
+.nosotros {
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: medium;
+    line-height: 45px;
+    font-weight: 1px;
+}
+
+.EveNosotros {
+    text-align: center;
+}
+
+.imgKai {
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+}
+
+/*-----------------------------------------------------DISCOGRAFIA---------------------------------------------*/
+.ContImg {
+    padding: 50px;
+}
+
+.DiscografiaGrid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.I1:hover {
+    background-color: rgba(27, 27, 27, 0.986);
+}
+
+
+/*------------Vista Desktop Discografia--------------*/
+@media only screen and (min-width: 1024px) {
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .GridContainerDiscografia {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "disco disco disco disco disco disco"
+            "footer footer footer footer footer footer";
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    div .DiscografiaGrid {
+        grid-area: disco;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/*--------------------Vista Tablet Disco-----------*/
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .GridContainerDiscografia {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "disco disco disco disco disco disco"
+            "footer footer footer footer footer footer";
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    div .DiscografiaGrid {
+        grid-area: disco;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/*-----Vista Mobile Disco------*/
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .GridContainerDiscografia {
+        display: grid;
+        grid-template-areas:
+            "header "
+            "nav"
+            "disco"
+            "footer";
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    div .DiscografiaGrid {
+        grid-area: disco;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+
+
+
+
+
+/*------------------------------------------------------CONTACTO--------------------------*/
+
+
+.con1 {
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contacto {
+    background-image: url(imagenes/fondo1.jpg);
+    width: 70%;
+    padding: 50px;
+    margin-left: 11%;
+}
+
+form {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    margin: 30px;
+}
+
+.FormInput {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(224, 25, 25);
+    background-color: transparent;
+    color: rgb(252, 252, 252);
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Select {
+    margin: 20px;
+}
+
+.FormInput:focus {
+    background-color: azure;
+    outline: none;
+    border-bottom: 3px solid rgb(34, 24, 77);
+    color: black;
+}
+
+.form textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.textarea {
+    text-align: center;
+}
+
+.terminos {
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+
+}
+
+.FormInput1 {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid rgb(250, 208, 21);
+    background-color: transparent;
+    color: rgb(252, 252, 252);
+}
+
+.esp {
+    margin: 20px;
+}
+
+.comentario {
+    width: 50%;
+    height: 40%;
+}
+
+
+/*------------------------Vista Desptok Contacto-------------------*/
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .GridContacto {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "contacto contacto contacto contacto contacto contacto"
+            "footer footer footer footer footer footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    section {
+        grid-area: contacto;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}
+
+/*---------------------------Vista Tablet Contacto---------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .GridContacto {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "contacto contacto contacto contacto contacto contacto"
+            "footer footer footer footer footer footer";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    section {
+        grid-area: contacto;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}
+
+/*----------------------Vista Mobile Contacto------------------*/
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .GridContacto {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "contacto"
+            "footer ";
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    section {
+        grid-area: contacto;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}

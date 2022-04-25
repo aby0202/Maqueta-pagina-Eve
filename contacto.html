@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="shortcut icon" href="imagenes/favicon.png">
+</head>
+
+<body>
+    <div class="GridContacto">
+        <!--inicio del header-->
+        <header class="HeaderFlex">
+            <h1 class="logo">EVE</h1>
+        </header>
+        <!--menu navegacion-->
+        <nav class="menu NavFlex">
+            <ul>
+                <li>
+                    <a href="index.html" target="_self">
+                        INICIO
+                    </a>
+                </li>
+                <li>
+                    <a href="media.html" target="_self">
+                        MEDIA
+                    </a>
+                </li>
+                <li>
+                    <a href="discografia.html" target="_self">
+                        DISCOGRAFIA
+                    </a>
+                </li>
+                <li>
+                    <a href="Perfil.html" target=_self>
+                        PERFIL
+                </li>
+                <li>
+                    <a href="contacto.html" target="_self">
+                        CONTACTO
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--contacto-->
+
+        <section class="contacto">
+
+            <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" class="form">
+                <h2 class="con1"> CONTACTO</h2>
+                <div class="formulario">
+                    <input type="text" placeholder="Nombre" class="FormInput">
+
+                    <input type="text" placeholder="Apellido" class="FormInput">
+
+                    <input type="text" placeholder="Email" class="FormInput">
+
+                    <input type="text" placeholder="Telefono" class="FormInput"></div>
+                <div class="Select">
+                    <select name="paises" class="select">
+                        <option>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Japon</option>
+                        <option>Alemania</option>
+                        <option>Tailandia</option>
+                        <option>mexico</option>
+                        <option>Colombia</option>
+                        <option>Estados Unidos</option>
+                        <option>Alaska</option>
+                        <option>Corea</option>
+                        <option>China</option>
+                    </select></div>
+                <div class="textarea">
+                    <textarea name="comentarios" id="comentarios" cols="80" rows="10"
+                        placeholder="escribe tu comentario" class="comentario"></textarea>
+                </div>
+                <div class="terminos formulario">
+                    <div class="esp">
+                        <label for="">Aceptar terminos y condiciones </label>
+                        <input type="checkbox" name="acepta" class="For">
+                    </div>
+                    <div class="esp">
+                        <label for="">Recibir Newsletter</label>
+                        <input type="checkbox" name="acepta" class="For">
+                    </div>
+                </div>
+                <div class="formulario">
+                    <input type="submit" value="Enviar el formulario" class="FormInput1">
+
+                    <input type="reset" value="Resetar formulario" class="FormInput1"></div>
+
+            </form>
+        </section>
+        <!--footer-->
+        <footer id="footer" class="footer FooterFlex">
+            <h2 class="footerLogo">
+                EVE
+            </h2>
+            <section class="cont">
+                <div class="imagen">
+                    <img src="imagenes/icon.jpg" alt="personaje" width="80px" height="80px">
+                </div>
+                <p class="foo">2022-EVE</p>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
