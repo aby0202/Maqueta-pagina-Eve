@@ -3,68 +3,160 @@
     padding: 0%;
 }
 
-/*------------------------Menu Index--------------------*/
-
-.menu {
-    height: auto;
-    width: 100%;
-    background-color: whitesmoke;
-    margin-top: 20px;
+/*---------------------------------------------------INDEX---------------------------------------------------*/
+.contenedor{
+    height: 95%;
+    width: 95%;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 20px;
-    margin: 0;
+.caja2{
+    width: 400px;
+    height: 300px;
+    background-image: url(imagenes/imagen3.jpg);
+    color: aliceblue;
 }
 
-.menu ul li {
-    display: inline-block;
+.logoEntrada{
+    font-family: 'Square Peg', cursive;
+    font-size: 200px;
+    font-weight: 100;
+    text-align: center;
 }
 
-.menu ul li a {
-    color: rgb(0, 0, 0);
+.enlace{
+    background-color: rgb(13, 139, 80);
+    height: 60px;
+    width: 250px;
+    margin: auto;
+
+}
+
+.enlace a {
+    color: aliceblue;
+    font-family: 'BIZ UDPMincho', serif;
+    font-size: 35px;
     text-decoration: none;
     display: block;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 30px;
-    text-shadow: 5px 5px 5px black;
+    padding-left: 65px;
+    
 }
-
-.NavFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.menu ul li a:hover {
-    background-color: rgba(51, 78, 30, 0.555);
-}
-
-.menu {
-    animation-name: efectoMenu;
-    animation-duration: 4s;
+.enlace:hover{
+    animation-name: click;
+    animation-duration: 1s;
     animation-iteration-count: 1;
+
 }
 
-
-@keyframes efectoMenu {
-
-    0% {
-        opacity: 0;
+@keyframes click{
+    40%{
+        -webkit-transform: scale(1.1);
     }
+    20%, 60%{
+        -webkit-transform: scale(0.8);
+    }
+}
 
+.img2{
+    width:900px;
+    height: 400px;
+}
 
-    100% {
+.caja{
+    width: 600px;
+    height: 800px;
+    margin: 50px;
+}
+
+.img1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.img1 :hover{
+    animation-name: intermitente;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes intermitente{
+    50%{
         opacity: 1;
     }
+    25%, 75%{
+        opacity: 0;
+    }
 }
 
-/*------------------Imagenes Index--------------*/
+.img2 img{
+    width:100%;
+    height: 100%;
+}
+
+
+/*------------Vista Desktop Index--------------*/
+@media only screen and (min-width: 1024px) {
+
+    /* index */
+    .caja{
+    margin-left: 250px;
+}
+
+.img2{
+    transform: translate(500px,-350px);   
+}
+
+.caja2{
+    transform: translate(800px,-1150px);
+}
+}
+
+/*--------------------Vista Tablet Index-----------*/
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    /* index */
+    .caja{
+        width: 400px;
+        height: 600px;
+    }
+
+.img2{
+    width: 0;
+    height: 0;
+}
+
+.caja2{
+    transform: translate(300px,-90px);
+}
+}
+/*-----Vista Mobile Index------*/
+
+@media only screen and (max-width: 767px) {
+
+.img2{
+    width: 0;
+    height: 0;
+}
+
+.caja{
+    margin: auto;
+    width: 500px;
+    height: 700px;
+}
+
+.caja2{
+    margin: auto;
+}
+
+.contenedor{
+    padding-top: 40px;
+}
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------Imagenes Inicio--------------*/
 
 .contenedorImagenes {
     height: 900px;
@@ -118,69 +210,8 @@
     height: auto;
 }
 
-body{
+body {
     background-color: black;
-}
-
-/*------------------------Menu Inicio--------------------*/
-
-.menu {
-    height: auto;
-    width: 100%;
-    background-color: whitesmoke;
-    margin-top: 20px;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 20px;
-    margin: 0;
-}
-
-.menu ul li {
-    display: inline-block;
-}
-
-.menu ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 30px;
-    text-shadow: 5px 5px 5px black;
-}
-
-.navFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.menu ul li a:hover {
-    background-color: rgba(51, 78, 30, 0.555);
-}
-
-.menu {
-    animation-name: efectoMenu;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-}
-
-
-@keyframes efectoMenu {
-
-    0% {
-        opacity: 0;
-    }
-
-
-    100% {
-        opacity: 1;
-    }
 }
 
 /*------------------Imagenes Inico--------------*/
@@ -262,15 +293,11 @@ body{
 }
 
 .redes {
-    display: flex;
     color: antiquewhite;
-    align-items: center;
     font-size: 60px;
     font-weight: 100;
     height: 100%;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
     text-shadow: 5px 5px 5px rgb(24, 24, 24);
 
 }
@@ -279,10 +306,6 @@ body{
 .flex {
     height: auto;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .texto {
@@ -307,70 +330,6 @@ body{
         box-shadow: 10px 10px 10px rgba(63, 62, 62, 0.637);
     }
 
-}
-
-
-/*---------footer----------*/
-footer {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logoFooter {
-    width: 300px;
-    height: 150px;
-    margin: 20px;
-}
-
-.logoFooter h2 {
-    color: rgb(187, 117, 25);
-    font-family: 'Square Peg', cursive;
-    font-size: 200px;
-    font-weight: 100;
-    text-align: center;
-    line-height: 175px;
-    text-shadow: 5px 5px 5px rgb(34, 33, 33);
-}
-
-.imgFooter {
-    width: 300px;
-    height: 150px;
-    margin: 20px;
-    min-height: auto;
-    min-width: auto;
-}
-
-.contenedorImg {
-    height: 100px;
-    min-height: auto;
-    width: 250px;
-    min-width: auto;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.foto img {
-    width: 100%;
-    height: 100%;
-}
-
-.text {
-    height: 50px;
-    width: 250px;
-    margin: auto;
-    color: rgb(20, 83, 39);
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Rajdhani', sans-serif;
-    line-height: 50px;
 }
 
 /*--------------------------------------------------------RESPONSIVE--------------------------------------------*/
@@ -416,7 +375,7 @@ footer {
     .imagen1 {
         margin-left: 100px;
         margin-top: 100px;
-        
+
     }
 
 
@@ -436,7 +395,6 @@ footer {
 @media only screen and (min-width: 768px) and (max-width:1023px) {
 
     /* inicio */
-   
     .imagen1 {
         margin-left: 50px;
         margin-top: 100px;
@@ -449,17 +407,12 @@ footer {
         width: 350px;
         height: 550px;
     }
-
-    .menu ul li a{
-        font-size: 23px;
-    }
-
 }
 
 /*-----Vista Mobile Inicio------*/
 
 @media only screen and (max-width: 767px) {
- 
+
     .imagen1 {
         margin: auto;
         margin-top: 50px;
@@ -476,187 +429,127 @@ footer {
         margin-top: 20px;
         margin-bottom: 50px;
     }
-
-     .menu ul li {
-        display: block;
-        padding: 10px;
-        text-align: center;
-    }
-    
-    .menu{
-        margin-bottom: 20px;
-    }
 }
 
-/*---------------------------------------------------INDEX---------------------------------------------------*/
-
-
-.contenedor{
-    height: 95%;
-    width: 95%;
+/*---------------------------------------------------MEDIA---------------------------------------------------*/
+.bg-dark {
+    background-color: rgb(83, 67, 100) !important
 }
 
-.caja2{
-    width: 400px;
-    height: 300px;
-    background-image: url(imagenes/imagen3.jpg);
-    color: aliceblue;
-}
-
-.logoEntrada{
+.navbar-brand {
+    font-size: 100px;
     font-family: 'Square Peg', cursive;
-    font-size: 200px;
-    font-weight: 100;
+    line-height: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.nav-item a {
+    font-size: 25px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav li {
+    margin: 20px;
+}
+
+div .col-md-6 {
+    background-color: black;
     text-align: center;
+    color: rgba(233, 233, 233, 0.719);
 }
 
-.enlace{
-    background-color: rgb(13, 139, 80);
-    height: 60px;
-    width: 250px;
-    margin: auto;
-  
+video {
+    width: 100%;
+    height: auto;
 }
 
-.enlace a {
-    color: aliceblue;
-    font-family: 'BIZ UDPMincho', serif;
-    font-size: 35px;
-      text-decoration: none;
-    display: block;
-    padding: 10px;
-    padding-left: 65px;
-    
-}
-.enlace:hover{
-    animation-name: click;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-
-}
-
-@keyframes click{
-    40%{
-        -webkit-transform: scale(1.1);
-    }
-    20%, 60%{
-        -webkit-transform: scale(0.8);
-    }
-}
-
-.img2{
-    width:900px;
+.iframe {
+    width: 100%;
     height: 400px;
+    min-height: auto;
+    margin-top: 50px;
 }
 
- .caja{
-    width: 600px;
-    height: 800px;
-    margin: 50px;
- }
+iframe {
+    width: 100%;
+    height: 400px;
+    min-height: auto;
+}
 
-.img1 img{
+.uno img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.dos img {
+    width: 100%;
+    height: auto;
+}
+
+.tres img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.footer {
+    background-color: rgb(235, 221, 217);
+    width: 100%;
+    height: 150px;
+}
+
+.textoIframe {
+    margin-top: 20px;
+}
+
+.contenedorImagenFooter {
+    height: 130px;
+    width: 200px;
+}
+
+.contenedorImagenFooter img{
     width: 100%;
     height: 100%;
 }
 
-.img1 :hover{
-    animation-name: intermitente;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-@keyframes intermitente{
-    50%{
-        opacity: 1;
-    }
-    25%, 75%{
-        opacity: 0;
-    }
+.contenedor1 {
+    height: 90%;
+    width: 190px;
+    margin: 2px;
 }
 
-.img2 img{
-    width:100%;
+.contenedor2 {
+    height: 60px;
+    width: 190px;
+    margin: 2px;
+}
+
+.contenedor2 p {
+    margin: auto;
+    color: rgb(20, 83, 39);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 50px;
+}
+
+.imagenFooter {
+    width: 160px;
+    margin-left: 6px;
+    margin-right: 6px;
     height: 100%;
 }
 
-
-/*------------Vista Desktop Index--------------*/
-@media only screen and (min-width: 1024px) {
-
-    /* index */
-    .caja{
-    margin-left: 250px;
+footer a{
+    color: black;
 }
-
-.img2{
-    transform: translate(500px,-350px);
-   
-}
-
-.caja2{
-    transform: translate(800px,-1150px);
-}
-}
-
-/*--------------------Vista Tablet Index-----------*/
-
-@media only screen and (min-width: 768px) and (max-width:1023px) {
-
-    /* index */
-    .caja{
-        width: 400px;
-        height: 600px;
-    }
-
- .img2{
-    width: 0;
-    height: 0;
-}
- 
-.caja2{
-    transform: translate(300px,-90px);
-}
-}
-/*-----Vista Mobile Index------*/
-
-@media only screen and (max-width: 767px) {
-
-
-     .img2{
-    width: 0;
-    height: 0;
-}
-
-.caja{
-    margin: auto;
-    width: 500px;
-    height: 700px;
-}
-
-.caja2{
-    margin: auto;
-}
-
-.contenedor{
-    padding-top: 40px;
-}
-
-}
-
-
-
-/*---------------------------------------------------MEDIA---------------------------------------------------*/
-.media {
-    text-align: center;
-    background-color: black;
-
-}
-
-.space {
-    padding: 50px;
-}
-
-
 
 /*-------------------------------------------------NOSOTROS---------------------------------------------------------*/
 .nosotros {

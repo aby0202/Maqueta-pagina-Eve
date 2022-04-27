@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,36 +34,40 @@
 <body>
     <div class="grid">
 
+    <!-------INICIO DEL NAVBAR-------->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Eve</a>
 
-        <nav class="menu navFlex">
-            <ul>
-                <li>
-                    <a href="inicio.html" target="_self">
-                        INICIO
-                    </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
                 </li>
-                <li>
-                    <a href="media.html" target="_self">
-                        MEDIA
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="perfil.html">Nosotros</a>
                 </li>
-                <li>
-                    <a href="discografia.html" target="_self">
-                        DISCOGRAFIA
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html">Media</a>
                 </li>
-                <li>
-                    <a href="Perfil.html" target="_self">
-                        PERFIL
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="discografia.html">Discografia</a>
                 </li>
-                <li>
-                    <a href="contacto.html" target="_self">
-                        CONTACTO
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+    <!------FIN DEL NAVBAR------>
+
+
 
         <div class="contenedorImagenes">
             <div class="imagen1">
@@ -80,7 +86,7 @@
         </div>
 
         <aside class="aside">
-            <div class="redes">
+            <div class="redes d-flex align-items-center justify-content-around flex-wrap">
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-youtube"></i>
@@ -90,34 +96,46 @@
             </div>
         </aside>
 
-        <div class="flex">
+        <div class="flex d-flex justify-content-around flex-wrap align-content-center">
             <div class="texto a1"> </div> 
             <div class="texto a2"></div>
             <div class="texto a3"></div>
         </div>
 
-        <footer> 
-            <div class="logoFooter">
-                <h2>Eve</h2>
-            </div>
-            <div class="imgFooter">
-                <div class="contenedorImg">
-                    <div class="foto">
-                        <img src="imagenes/favicon.png" alt="personaje con una hoja en la cara">
+        
+    <!----------COMIENZO DEL FOOTER------------>
+   <footer>
+        <div class="footer navbar">
+            <a class="navbar-brand" href="#">Eve</a>
+
+            <div class="contenedorImagenFooter d-flex flex-column  align-items-center">
+                <div class="contenedor1 d-flex justify-content-around">
+                    <div class="imagenFooter">
+                        <img src="/imagenes/icon.jpg" alt="">
                     </div>
-                    <div class="foto">
-                        <img src="imagenes/icon.jpg" alt=" un ojo">
+                    <div class="imagenFooter">
+                        <img src="/imagenes/favicon.png" alt="">
                     </div>
                 </div>
-                <div class="text">
+                <div class="contenedor2">
                     <p class="foo">2022-EVE</p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    <!--------CIERRE DEL FOOTER-------->
 
     </div>
 
-
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
