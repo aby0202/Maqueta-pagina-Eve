@@ -6,98 +6,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!--favicon-->
     <link rel="shortcut icon" href="imagenes/favicon.png">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <!--SEO-->
+    <meta name="description" content="EVE-Pagina perfil">
+    <meta name="keywords" content="Eve,Utaite,j-pop,musica japonesa,Adam by Eve, Kara no Kioku">
 </head>
 
 <body>
-    <!--inicio del header-->
-    <header class="HeaderFlex">
-        <h1 class="logo">EVE</h1>
-    </header>
-    <!--menu navegacion-->
-    <nav class="menu NavFlex">
-        <ul>
-            <li>
-                <a href="inicio.html" target="_self">
-                    INICIO
-                </a>
-            </li>
-            <li>
-                <a href="media.html" target="_self">
-                    MEDIA
-                </a>
-            </li>
-            <li>
-                <a href="discografia.html" target="_self">
-                    DISCOGRAFIA
-                </a>
-            </li>
-            <li>
-                <a href="Perfil.html" target=_self>
-                    PERFIL
-            </li>
-            <li>
-                <a href="contacto.html" target="_self">
-                    CONTACTO
-                </a>
-            </li>
-        </ul>
+
+    <!-------INICIO DEL NAVBAR-------->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Eve</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Perfil.html">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discografia.html">Discografia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <!--cierre enlaces-->
-    <h2>Nosotros</h2>
-    <!--imagen-->
-    <div class="EveNosotros">
-        <img src="imagenes/nos.jpg" alt="personajes">
-    </div>
-    <!--sobre nosotros-->
-    <main class="nosotros">
-        <p>Su carrera comenzo en 2009, cuando subió su primer cover al popular sitio web japonés Nico Nico Douga.
-            Posteriormente formó parte de los grupos einie y Riot of Color. Conocido por su voz delgada y juvenil, Eve
-            es un utaite que tiene como distinción su voz, que a pesar de tener un tono ligeramente nasal, es muy suave
-            y agradable. La misma suele describirse como shouta o linda. Sin embargo, también puede cantar de una manera
-            muy atípica y aspera.<br>
+    <!------FIN DEL NAVBAR------>
 
-            En octubre de 2016, lanzó su primer álbum titulado Official Nummber, mientras que en diciembre del mismo año
-            publicó Bunka para el cual escribió y compuso todas las canciones.<br>
-
-            En 2019, hizo su debut en la discográfica Toy's Factory con el lanzamiento del álbum Otogi. Entre 2019 y
-            2020, lanzó la canciones «Yamiyo» y «Kaikai Kitan» como banda sonora de los anime Dororo y Jujutsu Kaisen,
-            respectivamente. También publicó «Ao no Waltz» y «Shinkai» para la banda sonora de la película Josee, the
-            Tiger and the Fish.<br>
-
-            En febrero de 2020, lanzó su cuarto álbum de estudio Smile, que se ubicó en el segundo puesto de Oricon
-            Album Chart. En abril, Eve comenzó a publicar su primer manga Kara no Kioku en la revista Monthly Comic
-            Gene.<br>
-        </p>
-        <hr width="10%">
-        <p>
-            El 18 de mayo de 2021, Eve superó los 3 millones de suscriptores en YouTube. Alrededor de un mes antes de
-            eso, el 13 de abril de 2021, el video musical de Eve para Kaikai Kitan había superado los 100 millones de
-            visitas, siendo el primer video musical del canal de Eve en alcanzar ese hito.<br>
-
-            Alrededor de la última semana de junio, su video musical de Dramaturgy había superado los 100 millones de
-            visitas, realizando una versión en vivo el 1 de julio de 2021.
-        </p>
-        <!--imagen-->
-        <img src="imagenes/kaikaikitan.jpg" alt="personajes de Jujustsu Kaisen" class="imgKai">
-    </main>
-    <!--footer-->
-    <footer id="footer" class="footer FooterFlex">
-        <h2 class="footerLogo">
-            EVE
-        </h2>
-        <section class="cont">
-            <div class="imagen">
-                <img src="imagenes/icon.jpg" alt="personaje" width="80px" height="80px">
+    <div class="row">
+        <div class="perfil col-md-6">
+            <img src="imagenes/nos.jpg" alt="personajes de Eve">
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center flex-column text-center">
+            <div class="textoPerfil">
+                <p>Su carrera comenzo en 2009, cuando subió su primer cover al popular sitio web japonés Nico Nico
+                    Douga.
+                    Posteriormente formó parte de los grupos einie y Riot of Color. Conocido por su voz delgada y
+                    juvenil, Eve
+                    es un utaite que tiene como distinción su voz, que a pesar de tener un tono ligeramente nasal, es
+                    muy suave
+                    y agradable. La misma suele describirse como shouta o linda. Sin embargo, también puede cantar de
+                    una manera
+                    muy atípica y aspera.<span class="maquinaDeEscribir">&#160;</span></p>
             </div>
-            <p class="foo">2022-EVE</p>
-        </section>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center flex-column text-center">
+            <div class="textoPerfil">
+                <p>En octubre de 2016, lanzó su primer álbum titulado Official Nummber, mientras que en diciembre del
+                    mismo año
+                    publicó Bunka para el cual escribió y compuso todas las canciones.</p>
+                <p>En 2019, hizo su debut en la discográfica Toy's Factory con el lanzamiento del álbum Otogi. Entre
+                    2019 y
+                    2020, lanzó la canciones «Yamiyo» y «Kaikai Kitan» como banda sonora de los anime Dororo y Jujutsu
+                    Kaisen,
+                    respectivamente. También publicó «Ao no Waltz» y «Shinkai» para la banda sonora de la película
+                    Josee, the
+                    Tiger and the Fish</p>
+                <p> En febrero de 2020, lanzó su cuarto álbum de estudio Smile, que se ubicó en el segundo puesto de
+                    Oricon
+                    Album Chart.</p>
+            </div>
+        </div>
+        <div class=" a1 a2 col-md-6">
+            <img src="imagenes/aside.jpg" alt="personajes de Jujustsu Kaisen">
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class=" perfil a2 col-md-6">
+            <img src="imagenes/karaNoKioku.jpg" alt="personajes de Jujustsu Kaisen">
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center flex-column text-center">
+            <div class="textoPerfil">
+                <p>En abril, Eve comenzó a publicar su primer manga Kara no Kioku en la revista Monthly Comic Gene,que presenta a algunos personajes de sus MV, como Tobi, Noppo y Hitotsume</p>
+                <p>También ha trabajado como seiyuu invitado en el anime Mecha-Ude. Tuvoo cameos como compañero de clase de uno de los protagonistas.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center flex-column text-center">
+            <div class="textoPerfil">
+                <p>El 18 de mayo de 2021, Eve superó los 3 millones de suscriptores en YouTube. Alrededor de un mes
+                    antes de
+                    eso, el 13 de abril de 2021, el video musical de Eve para Kaikai Kitan había superado los 100
+                    millones
+                    de
+                    visitas, siendo el primer video musical del canal de Eve en alcanzar ese hito.</p>
+                <p>Alrededor de la última semana de junio, su video musical de Dramaturgy había superado los 100
+                    millones de
+                    visitas, realizando una versión en vivo el 1 de julio de 2021.</p>
+
+
+            </div>
+        </div>
+        <div class="a1 a2 col-md-6">
+            <img src="imagenes/kaikaikitan.jpg" alt="personajes de Jujustsu Kaisen">
+        </div>
+    </div>
+
+    <!----------COMIENZO DEL FOOTER------------>
+    <footer>
+        <div class="footer navbar">
+            <a class="navbar-brand" href="inicio.html">Eve</a>
+            <div class="contenedorImagenFooter d-flex flex-column  align-items-center">
+                <div class="contenedor1 d-flex justify-content-around">
+                    <div class="imagenFooter">
+                        <img src="imagenes/icon.jpg" alt="">
+                    </div>
+                    <div class="imagenFooter">
+                        <img src="imagenes/favicon.png" alt="">
+                    </div>
+                </div>
+                <div class="contenedor2">
+                    <p class="foo">2022-EVE</p>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!--------CIERRE DEL FOOTER-------->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
