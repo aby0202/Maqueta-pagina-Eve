@@ -1,0 +1,576 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+$fuente1:"Amatic SC",
+cursive;
+$fuente2:"Libre Baskerville",
+serif;
+
+/*mapa*/
+
+$paleta: (azul: #01070c,
+    naranja: #F7770F,
+    blanco: #b1afae,
+    gris: #c7c3bb9c,
+    dark: #00000096,
+    hueso: #ffffff,
+);
+
+@mixin sizes($font, $size) {
+    font-family: $font;
+    font-size: $size;
+}
+@mixin WH($width,$height){
+    width: $width;
+    height: $height;
+}
+
+.bg-dark {
+    background-color: map-get($map: $paleta, $key:azul) !important;
+}
+
+body {
+    background-image: url(imagenes/fondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    .navbar-collapse {
+        justify-content: end;
+    }
+
+    .collapse {
+        .navbar-nav .nav-item {
+            margin: 20px;
+            font-size: 25px;
+            font-family: $fuente1;
+        }
+    }
+
+}
+
+
+
+.jumbotron {
+    @extend body;
+    margin-bottom: 0px;
+    color: map-get($map: $paleta, $key:blanco);
+
+    .container {
+        font-family: $fuente2;
+    }
+}
+
+.row {
+    .col-md-6 {
+        padding: 0;
+    }
+
+    .entrar {
+        height: 30%;
+
+        img {
+            @include WH(100%,100%);       
+            border-radius: 30px;
+        }
+    }
+
+    .entrar2 {
+        padding-top: 70px;
+        height: 30%;
+
+        h2 {
+            @include sizes($fuente1, 120px);
+            color: map-get($map: $paleta, $key: blanco);
+        }
+
+        h3 {
+            @include sizes($fuente1, 60px);
+            margin-bottom: 90px;
+            color: map-get($map: $paleta, $key: naranja);
+        }
+    }
+}
+
+
+.spotify {
+    padding-left: 120px;
+    margin-top: 50px;
+}
+
+.navbar-brand {
+    @include sizes($fuente1, 75px);
+    line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 100;
+}
+
+.footer {
+    background-color: map-get($map: $paleta, $key: azul);
+    @include WH(100%,auto);
+
+    a {
+        color: map-get($map: $paleta, $key: blanco);
+    }
+
+    .contenedorImagenFooter {
+        @include WH(200px,130px);
+
+        img {
+            @include WH(100%,100%);
+        }
+
+        .contenedor1 {
+            @include WH(190px,90%);
+            margin: 2px;
+
+            .imagenFooter {
+                @include WH(160px,100%);
+                margin-left: 6px;
+                margin-right: 6px;
+            }
+        }
+
+        .contenedor2 {
+            @include WH(190px,60px);
+            margin: 2px;
+
+            p {
+                @include sizes($fuente1, 30px);
+                margin: auto;
+                color: map-get($map: $paleta, $key: blanco);
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+
+/*------------------------MEDIA--------------------*/
+@mixin WHM($width, $height, $min) {
+    width: $width;
+    height: $height;
+    min-height: $min;
+}
+
+.uno {
+    img {
+        @include WHM(100%, auto, auto);
+        object-fit: cover;
+    }
+}
+
+.row {
+    .col-md-6 {
+        .a3 {
+            text-align: center;
+            color: map-get($map: $paleta, $key:blanco);
+        }
+
+        .textoIframe {
+            @extend .a3;
+            padding: 20px;
+        }
+
+        .iframe {
+            @include WHM(100%, 400px, auto);
+            margin-top: 50px;
+
+            iframe {
+                @include WHM(100%, 400px, auto);
+            }
+        }
+    }
+
+    video {
+        @include WHM(100%, auto, auto);
+    }
+}
+
+/*----------------Perfil------------*/
+
+.row {
+    .col-md-6 {
+        .textoPerfil {
+            width: 90%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-family: $fuente2;
+            line-height: 40px;
+            color: map-get($map: $paleta, $key:blanco);
+
+            overflow: hidden;
+            animation-name: texto;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    .perfil {
+        img {
+            @include WHM(100%, auto, auto);
+            box-shadow: 15px 15px 15px map-get($map: $paleta, $key: gris);
+        }
+    }
+}
+
+.row {
+    .col-md-6 {
+        .textoPerfil {
+            @extend .textoPerfil;
+        }
+    }
+
+    .a1 {
+        img {
+            @include WHM(100%, auto, auto);
+            box-shadow: -15px 15px 15px map-get($map: $paleta, $key:gris);
+        }
+    }
+}
+
+@keyframes texto {
+    0% {
+        transform: rotateY(-50px);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    80% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width: 942px) {
+
+    .a2 img {
+        margin-top: 100px;
+    }
+}
+
+/*---------------Discografia-------------*/
+@mixin WHMM($width, $height, $minw, $minh) {
+    width: $width;
+    height: $height;
+    min-width: $minw;
+    min-height: $minh;
+}
+
+
+.disco {
+    margin: 100px;
+
+    .contImg {
+        @include WHMM(400px, 400px, auto, auto);
+        margin: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 15px 15px 15px map-get($map: $paleta, $key:dark);
+
+        img {
+            @include WHMM(100%, 100%, auto, auto);
+            transition: all 500ms ease-out;
+        }
+
+        .textoHover {
+            @include WHMM(100%, 100%, auto, auto);
+            position: absolute;
+            top: 0%;
+            background-color: rgba(202, 194, 185, 0.678);
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+
+            a {
+                background-color: black;
+                color: map-get($map: $paleta, $key:blanco);
+                margin: 20px;
+                padding: 10px;
+            }
+
+            h3 {
+                margin-bottom: 70px;
+            }
+        }
+
+    }
+
+    .contImg:hover>.textoHover {
+        opacity: 1;
+        visibility: visible;
+        animation-name: aparecer;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+
+    .contImg:hover>.textoHover p {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+
+    .disco {
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+
+/*----paginas discografia-----*/
+
+.row {
+    .bubble {
+        img {
+            @include WHMM(100%, auto, auto, auto)
+        }
+    }
+
+    .textoBubble {
+        width: 50%;
+        text-align: center;
+        font-family: $fuente2;
+        color: map-get($map: $paleta, $key: hueso);
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        li {
+            margin: 20px
+        }
+    }
+}
+
+/*----------Contacto----------*/
+
+.contacto {
+    width: 70%;
+    margin: auto;
+
+    form {
+        text-align: center;
+        padding: 30px;
+        background-color: map-get($map: $paleta, $key: dark);
+        color: map-get($map: $paleta, $key: blanco);
+        margin: 30px;
+
+        h2 {
+            @include sizes($fuente1, 30px);
+        }
+
+        .formulario {
+            .formInput {
+                width: 40%;
+                padding: 10px;
+                margin: 10px;
+                border: none;
+                border-bottom: 3px solid map-get($map: $paleta, $key:naranja);
+                background-color: map-get($map: $paleta, $key: azul);
+                color: map-get($map: $paleta, $key:blanco);
+            }
+
+        }
+
+        .select {
+            margin: 20px;
+        }
+
+        .textarea {
+            min-height: 150px;
+            resize: none;
+            text-align: center;
+            textarea{
+                @include WH(50%,40%);
+            }
+
+        }
+
+        .terminos {
+            @include sizes($fuente1, 30px);
+
+            .esp {
+                margin: 20px;
+            }
+        }
+    }
+}
+.comentario {
+    width: 50%;
+    height: 40%;
+}
+
+/*---------INDEX--------*/
+.contenedor {
+    @include WH(95%,95%);
+}
+
+.caja2 {
+    @include WH(400px,300px);
+    background-image: url(imagenes/imagen3.jpg);
+    color: map-get($map: $paleta, $key:blanco );
+}
+
+.logoEntrada {
+    @include sizes($fuente1,200px );
+    font-weight: 100;
+    text-align: center;
+}
+
+.enlace {
+    @include WH(250px,60px);
+    background-color: rgb(13, 139, 80);
+    margin: auto;
+
+}
+
+.enlace a {
+    @include sizes($fuente1,35px );
+    color:map-get($map: $paleta, $key:blanco );
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.enlace:hover {
+    animation-name: click;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes click {
+    40% {
+        -webkit-transform: scale(1.1);
+    }
+
+    20%,
+    60% {
+        -webkit-transform: scale(0.8);
+    }
+}
+
+.img2 {
+    @include WH(900px,400px);
+}
+
+.caja {
+    @include WH(600px,800px);
+    margin: 50px;
+}
+
+.img1 img {
+    @include WH(100%,100%);
+}
+
+.img1 :hover {
+    animation-name: intermitente;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes intermitente {
+    50% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.img2 img {
+    @include WH(100%,100%);
+}
+
+
+/*------------Vista Desktop Index--------------*/
+@media only screen and (min-width: 1024px) {
+
+    /* index */
+    .caja {
+        margin-left: 250px;
+    }
+
+    .img2 {
+        transform: translate(500px, -350px);
+    }
+
+    .caja2 {
+        transform: translate(800px, -1150px);
+    }
+}
+
+/*--------------------Vista Tablet Index-----------*/
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+    /* index */
+    .caja {
+        @include WH(400px,600px);
+    }
+
+    .img2 {
+        @include WH(0,0);
+    }
+
+    .caja2 {
+        transform: translate(300px, -90px);
+    }
+}
+
+/*-----Vista Mobile Index------*/
+
+@media only screen and (max-width: 767px) {
+
+    .img2 {
+        @include WH(0,0);
+    }
+
+    .caja {
+        @include WH(500px,700px);
+        margin: auto;
+    }
+
+    .caja2 {
+        margin: auto;
+    }
+
+    .contenedor {
+        padding-top: 40px;
+    }
+}
+
+

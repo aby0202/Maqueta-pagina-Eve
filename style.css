@@ -3,282 +3,289 @@
     padding: 0%;
 }
 
-/*---------------------------------------------------INDEX---------------------------------------------------*/
-.contenedor{
-    height: 95%;
-    width: 95%;
+/*mapa*/
+.bg-dark {
+    background-color: #01070c !important;
 }
 
-.caja2{
-    width: 400px;
-    height: 300px;
-    background-image: url(imagenes/imagen3.jpg);
-    color: aliceblue;
+body,
+.jumbotron {
+    background-image: url(imagenes/fondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.logoEntrada{
-    font-family: 'Square Peg', cursive;
-    font-size: 200px;
+nav .navbar-collapse {
+    justify-content: end;
+}
+
+nav .collapse .navbar-nav .nav-item {
+    margin: 20px;
+    font-size: 25px;
+    font-family: "Amatic SC", cursive;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    color: #b1afae;
+}
+
+.jumbotron .container {
+    font-family: "Libre Baskerville", serif;
+}
+
+.row .col-md-6 {
+    padding: 0;
+}
+
+.row .entrar {
+    height: 30%;
+}
+
+.row .entrar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.row .entrar2 {
+    padding-top: 70px;
+    height: 30%;
+}
+
+.row .entrar2 h2 {
+    font-family: "Amatic SC", cursive;
+    font-size: 120px;
+    color: #b1afae;
+}
+
+.row .entrar2 h3 {
+    font-family: "Amatic SC", cursive;
+    font-size: 60px;
+    margin-bottom: 90px;
+    color: #F7770F;
+}
+
+.spotify {
+    padding-left: 120px;
+    margin-top: 50px;
+}
+
+.navbar-brand {
+    font-family: "Amatic SC", cursive;
+    font-size: 75px;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-weight: 100;
-    text-align: center;
 }
 
-.enlace{
-    background-color: rgb(13, 139, 80);
-    height: 60px;
-    width: 250px;
-    margin: auto;
-
+.footer {
+    background-color: #01070c;
+    width: 100%;
+    height: auto;
 }
 
-.enlace a {
-    color: aliceblue;
-    font-family: 'BIZ UDPMincho', serif;
-    font-size: 35px;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    padding-left: 65px;
-    
-}
-.enlace:hover{
-    animation-name: click;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-
+.footer a {
+    color: #b1afae;
 }
 
-@keyframes click{
-    40%{
-        -webkit-transform: scale(1.1);
-    }
-    20%, 60%{
-        -webkit-transform: scale(0.8);
-    }
+.footer .contenedorImagenFooter {
+    width: 200px;
+    height: 130px;
 }
 
-.img2{
-    width:900px;
-    height: 400px;
-}
-
-.caja{
-    width: 600px;
-    height: 800px;
-    margin: 50px;
-}
-
-.img1 img{
+.footer .contenedorImagenFooter img {
     width: 100%;
     height: 100%;
 }
 
-.img1 :hover{
-    animation-name: intermitente;
-    animation-duration: 2s;
+.footer .contenedorImagenFooter .contenedor1 {
+    width: 190px;
+    height: 90%;
+    margin: 2px;
+}
+
+.footer .contenedorImagenFooter .contenedor1 .imagenFooter {
+    width: 160px;
+    height: 100%;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.footer .contenedorImagenFooter .contenedor2 {
+    width: 190px;
+    height: 60px;
+    margin: 2px;
+}
+
+.footer .contenedorImagenFooter .contenedor2 p {
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
+    margin: auto;
+    color: #b1afae;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*------------------------MEDIA--------------------*/
+.uno img {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    object-fit: cover;
+}
+
+.row .col-md-6 .a3,
+.row .col-md-6 .textoIframe {
+    text-align: center;
+    color: #b1afae;
+}
+
+.row .col-md-6 .textoIframe {
+    padding: 20px;
+}
+
+.row .col-md-6 .iframe {
+    width: 100%;
+    height: 400px;
+    min-height: auto;
+    margin-top: 50px;
+}
+
+.row .col-md-6 .iframe iframe {
+    width: 100%;
+    height: 400px;
+    min-height: auto;
+}
+
+.row video {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+}
+
+/*----------------Perfil------------*/
+.row .col-md-6 .textoPerfil {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Libre Baskerville", serif;
+    line-height: 40px;
+    color: #b1afae;
+    overflow: hidden;
+    animation-name: texto;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
-@keyframes intermitente{
-    50%{
-        opacity: 1;
-    }
-    25%, 75%{
+
+.row .perfil img {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    box-shadow: 15px 15px 15px rgba(199, 195, 187, 0.6117647059);
+}
+
+.row .a1 img {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    box-shadow: -15px 15px 15px rgba(199, 195, 187, 0.6117647059);
+}
+
+@keyframes texto {
+    0% {
+        transform: rotateY(-50px);
         opacity: 0;
     }
-}
 
-.img2 img{
-    width:100%;
-    height: 100%;
-}
-
-
-/*------------Vista Desktop Index--------------*/
-@media only screen and (min-width: 1024px) {
-
-    /* index */
-    .caja{
-    margin-left: 250px;
-}
-
-.img2{
-    transform: translate(500px,-350px);   
-}
-
-.caja2{
-    transform: translate(800px,-1150px);
-}
-}
-
-/*--------------------Vista Tablet Index-----------*/
-
-@media only screen and (min-width: 768px) and (max-width:1023px) {
-
-    /* index */
-    .caja{
-        width: 400px;
-        height: 600px;
+    30% {
+        opacity: 1;
     }
 
-.img2{
-    width: 0;
-    height: 0;
+    50% {
+        transform: translateY(10px);
+    }
+
+    80% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
 }
 
-.caja2{
-    transform: translate(300px,-90px);
-}
-}
-/*-----Vista Mobile Index------*/
-
-@media only screen and (max-width: 767px) {
-
-.img2{
-    width: 0;
-    height: 0;
+@media only screen and (max-width: 942px) {
+    .a2 img {
+        margin-top: 100px;
+    }
 }
 
-.caja{
-    margin: auto;
-    width: 500px;
-    height: 700px;
+/*---------------Discografia-------------*/
+.disco {
+    margin: 100px;
 }
 
-.caja2{
-    margin: auto;
-}
-
-.contenedor{
-    padding-top: 40px;
-}
-
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*------------------Imagenes Inicio--------------*/
-
-.contenedorImagenes {
-    height: 900px;
-}
-
-.imagen1 {
+.disco .contImg {
+    width: 400px;
     height: 400px;
-    width: 900px;
     min-width: auto;
     min-height: auto;
-    border: solid 3px whitesmoke;
-    box-shadow: 10px 10px 10px rgb(24, 22, 22);
-
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5882352941);
 }
 
-.imagen1 video {
-    height: 100%;
+.disco .contImg img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    min-width: auto;
+    min-height: auto;
+    transition: all 500ms ease-out;
 }
 
-
-
-.imagen2 {
-    background-image: url(imagenes/imagen3.jpg);
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    padding-top: 5px;
-    border: solid 3px whitesmoke;
-    box-shadow: 10px 10px 10px rgb(19, 18, 18);
-}
-
-
-.imagen2 p {
-    color: aliceblue;
+.disco .contImg .textoHover {
+    width: 100%;
+    height: 100%;
+    min-width: auto;
+    min-height: auto;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(202, 194, 185, 0.678);
+    opacity: 0;
+    visibility: hidden;
     text-align: center;
-    font-family: 'Merriweather', serif;
-    line-height: 30px;
-    font-size: 15px;
-    margin: 40px;
-    background-color: rgba(19, 110, 80, 0.534);
-
 }
 
-.imagen2:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-.contenedorImagenes {
-    height: auto;
-}
-
-body {
+.disco .contImg .textoHover a {
     background-color: black;
+    color: #b1afae;
+    margin: 20px;
+    padding: 10px;
 }
 
-/*------------------Imagenes Inico--------------*/
-
-.contenedorImagenes {
-    height: 900px;
+.disco .contImg .textoHover h3 {
+    margin-bottom: 70px;
 }
 
-.imagen1 {
-    height: 400px;
-    width: 900px;
-    min-width: auto;
-    min-height: auto;
-    border: solid 3px whitesmoke;
-    box-shadow: 10px 10px 10px rgb(24, 22, 22);
-
+.disco .contImg:hover>.textoHover {
+    opacity: 1;
+    visibility: visible;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
 
-.imagen1 video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.disco .contImg:hover>.textoHover p {
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
-
-
-.imagen2 {
-    background-image: url(imagenes/imagen3.jpg);
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    padding-top: 5px;
-    border: solid 3px whitesmoke;
-    box-shadow: 10px 10px 10px rgb(19, 18, 18);
-}
-
-
-.imagen2 p {
-    color: aliceblue;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    line-height: 30px;
-    font-size: 15px;
-    margin: 40px;
-    background-color: rgba(19, 110, 80, 0.534);
-
-}
-
-.imagen2:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}
-
-.contenedorImagenes {
-    height: auto;
-}
-
-/*---------aside--------*/
-.aside {
-    height: 1000px;
-    min-height: auto;
-    animation-name: aside;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes aside {
-
+@keyframes aparecer {
     0% {
         opacity: 0;
     }
@@ -286,496 +293,88 @@ body {
     50% {
         opacity: 1;
     }
-
-    100% {
-        opacity: 0;
-    }
 }
 
-.redes {
-    color: antiquewhite;
-    font-size: 60px;
-    font-weight: 100;
-    height: 100%;
-    width: 100%;
-    text-shadow: 5px 5px 5px rgb(24, 24, 24);
-
-}
-
-/*----------cajas---------*/
-.flex {
-    height: auto;
-    width: 100%;
-}
-
-.texto {
-    background-color: rgb(190, 190, 192);
-    background-image: url(imagenes/imagen3.jpg);
-    height: 300px;
-    width: 500px;
-    margin: 20px;
-}
-
-.texto {
-    animation-name: rebotar;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rebotar {
-
-    50% {
-        opacity: 1;
-        transform: translateY(5px);
-        box-shadow: 10px 10px 10px rgba(63, 62, 62, 0.637);
-    }
-
-}
-
-/*--------------------------------------------------------RESPONSIVE--------------------------------------------*/
-/*------------Vista Desktop Inicio--------------*/
-@media only screen and (min-width: 1024px) {
-
-    /* inicio */
-
-    .grid {
-        display: grid;
-        grid-template-areas:
-            "nav nav nav"
-            "imagen imagen aside"
-            "texto texto  texto"
-            "footer footer footer";
-        grid-template-columns: repeat(2, 1fr), 300px;
-        grid-template-rows: repeat(4, auto);
-    }
-
-
-    nav {
-        grid-area: nav;
-    }
-
-    .contenedorImagenes {
-        grid-area: imagen;
-    }
-
-    aside {
-        grid-area: aside;
-
-    }
-
-    .flex {
-        grid-area: texto;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-
-    .imagen1 {
-        margin-left: 100px;
-        margin-top: 100px;
-
-    }
-
-
-    .imagen2 {
-        transform: translate(900px, -50px);
-        width: 500px;
-        height: 400px;
-    }
-
-    .redes {
-        flex-direction: column;
-    }
-}
-
-/*--------------------Vista Tablet Inicio-----------*/
-
-@media only screen and (min-width: 768px) and (max-width:1023px) {
-
-    /* inicio */
-    .imagen1 {
-        margin-left: 50px;
-        margin-top: 100px;
-        height: 300px;
-        width: 600px;
-    }
-
-    .imagen2 {
-        transform: translate(400px, -40px);
-        width: 350px;
-        height: 550px;
-    }
-}
-
-/*-----Vista Mobile Inicio------*/
-
-@media only screen and (max-width: 767px) {
-
-    .imagen1 {
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+    .disco {
         margin: auto;
-        margin-top: 50px;
-        height: 300px;
-        width: 600px;
-        min-width: 200px;
-        min-height: 100px;
-    }
-
-    .imagen2 {
-        width: 400px;
-        height: 500px;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 50px;
+        margin-top: 100px;
     }
 }
 
-/*---------------------------------------------------MEDIA---------------------------------------------------*/
-.bg-dark {
-    background-color: rgb(83, 67, 100) !important
-}
-
-.navbar-brand {
-    font-size: 100px;
-    font-family: 'Square Peg', cursive;
-    line-height: 10px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.nav-item a {
-    font-size: 25px;
-    font-family: 'Rajdhani', sans-serif;
-}
-
-.navbar-collapse {
-    justify-content: center;
-}
-
-.navbar-nav li {
-    margin: 20px;
-}
-
-div .col-md-6 {
-    background-color: black;
-    text-align: center;
-    color: rgba(233, 233, 233, 0.719);
-}
-
-video {
+/*----paginas discografia-----*/
+.row .bubble img {
     width: 100%;
     height: auto;
-}
-
-.iframe {
-    width: 100%;
-    height: 400px;
-    min-height: auto;
-    margin-top: 50px;
-}
-
-iframe {
-    width: 100%;
-    height: 400px;
+    min-width: auto;
     min-height: auto;
 }
 
-.uno img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.dos img {
-    width: 100%;
-    height: auto;
-}
-
-.tres img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-
-.footer {
-    background-color: rgb(235, 221, 217);
-    width: 100%;
-    height: 150px;
-}
-
-.textoIframe {
-    margin-top: 20px;
-}
-
-.contenedorImagenFooter {
-    height: 130px;
-    width: 200px;
-}
-
-.contenedorImagenFooter img{
-    width: 100%;
-    height: 100%;
-}
-
-.contenedor1 {
-    height: 90%;
-    width: 190px;
-    margin: 2px;
-}
-
-.contenedor2 {
-    height: 60px;
-    width: 190px;
-    margin: 2px;
-}
-
-.contenedor2 p {
-    margin: auto;
-    color: rgb(20, 83, 39);
+.row .textoBubble {
+    width: 50%;
     text-align: center;
-    font-size: 30px;
-    font-family: 'Rajdhani', sans-serif;
-    line-height: 50px;
+    font-family: "Libre Baskerville", serif;
+    color: #ffffff;
 }
 
-.imagenFooter {
-    width: 160px;
-    margin-left: 6px;
-    margin-right: 6px;
-    height: 100%;
+.row .textoBubble h2 {
+    margin-bottom: 30px;
 }
 
-footer a{
-    color: black;
+.row .textoBubble li {
+    margin: 20px;
 }
 
-/*-------------------------------------------------NOSOTROS---------------------------------------------------------*/
-.nosotros {
-    color: aliceblue;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Merriweather', serif;
-    font-size: medium;
-    line-height: 45px;
-    font-weight: 1px;
-}
-
-.EveNosotros {
-    text-align: center;
-}
-
-.imgKai {
-    width: 600px;
-    height: 600px;
-    padding: 20px;
-}
-
-/*-----------------------------------------------------DISCOGRAFIA---------------------------------------------*/
-.ContImg {
-    padding: 50px;
-}
-
-.DiscografiaGrid {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.I1:hover {
-    background-color: rgba(27, 27, 27, 0.986);
-}
-
-
-/*------------Vista Desktop Discografia--------------*/
-@media only screen and (min-width: 1024px) {
-
-    body {
-        background-color: rgb(0, 0, 0);
-    }
-
-    .GridContainerDiscografia {
-        display: grid;
-        grid-template-areas:
-            "header header header header header header"
-            "nav nav nav nav nav nav"
-            "disco disco disco disco disco disco"
-            "footer footer footer footer footer footer";
-        grid-template-rows: auto auto auto auto auto auto auto;
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    header {
-        grid-area: header;
-    }
-
-    nav {
-        grid-area: nav;
-    }
-
-    div .DiscografiaGrid {
-        grid-area: disco;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-}
-
-/*--------------------Vista Tablet Disco-----------*/
-
-@media only screen and (min-width: 768px) and (max-width:1023px) {
-
-    body {
-        background-color: rgb(0, 0, 0);
-    }
-
-    .GridContainerDiscografia {
-        display: grid;
-        grid-template-areas:
-            "header header header header header header"
-            "nav nav nav nav nav nav"
-            "disco disco disco disco disco disco"
-            "footer footer footer footer footer footer";
-        grid-template-rows: auto auto auto auto auto auto auto;
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    header {
-        grid-area: header;
-    }
-
-    nav {
-        grid-area: nav;
-    }
-
-    div .DiscografiaGrid {
-        grid-area: disco;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-}
-
-/*-----Vista Mobile Disco------*/
-
-@media only screen and (max-width: 767px) {
-    body {
-        background-color: rgb(0, 0, 0);
-    }
-
-    .GridContainerDiscografia {
-        display: grid;
-        grid-template-areas:
-            "header "
-            "nav"
-            "disco"
-            "footer";
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        grid-area: header;
-    }
-
-    nav {
-        grid-area: nav;
-    }
-
-    div .DiscografiaGrid {
-        grid-area: disco;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-}
-
-
-
-
-
-
-/*------------------------------------------------------CONTACTO--------------------------*/
-
-
-.con1 {
-    font-family: 'Square Peg', cursive;
-    font-size: 30px;
-    text-align: center;
-}
-
+/*----------Contacto----------*/
 .contacto {
-    background-image: url(imagenes/fondo1.jpg);
     width: 70%;
-    padding: 50px;
-    margin-left: 11%;
+    margin: auto;
 }
 
-form {
+.contacto form {
     text-align: center;
     padding: 30px;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.5882352941);
+    color: #b1afae;
     margin: 30px;
 }
 
-.FormInput {
+.contacto form h2 {
+    font-family: "Amatic SC", cursive;
+    font-size: 30px;
+}
+
+.contacto form .formulario .formInput {
     width: 40%;
     padding: 10px;
     margin: 10px;
     border: none;
-    border-bottom: 3px solid rgb(224, 25, 25);
-    background-color: transparent;
-    color: rgb(252, 252, 252);
+    border-bottom: 3px solid #F7770F;
+    background-color: #01070c;
+    color: #b1afae;
 }
 
-.formulario {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.Select {
+.contacto form .select {
     margin: 20px;
 }
 
-.FormInput:focus {
-    background-color: azure;
-    outline: none;
-    border-bottom: 3px solid rgb(34, 24, 77);
-    color: black;
-}
-
-.form textarea {
+.contacto form .textarea {
     min-height: 150px;
     resize: none;
-}
-
-.textarea {
     text-align: center;
 }
 
-.terminos {
-    font-family: 'Square Peg', cursive;
+.contacto form .textarea textarea {
+    width: 50%;
+    height: 40%;
+}
+
+.contacto form .terminos {
+    font-family: "Amatic SC", cursive;
     font-size: 30px;
-
 }
 
-.FormInput1 {
-    width: 40%;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-bottom: 3px solid rgb(250, 208, 21);
-    background-color: transparent;
-    color: rgb(252, 252, 252);
-}
-
-.esp {
+.contacto form .terminos .esp {
     margin: 20px;
 }
 
@@ -784,113 +383,154 @@ form {
     height: 40%;
 }
 
+/*---------INDEX--------*/
+.contenedor {
+    width: 95%;
+    height: 95%;
+}
 
-/*------------------------Vista Desptok Contacto-------------------*/
+.caja2 {
+    width: 400px;
+    height: 300px;
+    background-image: url(imagenes/imagen3.jpg);
+    color: #b1afae;
+}
 
+.logoEntrada {
+    font-family: "Amatic SC", cursive;
+    font-size: 200px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.enlace {
+    width: 250px;
+    height: 60px;
+    background-color: rgb(13, 139, 80);
+    margin: auto;
+}
+
+.enlace a {
+    font-family: "Amatic SC", cursive;
+    font-size: 35px;
+    color: #b1afae;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.enlace:hover {
+    animation-name: click;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes click {
+    40% {
+        -webkit-transform: scale(1.1);
+    }
+
+    20%,
+    60% {
+        -webkit-transform: scale(0.8);
+    }
+}
+
+.img2 {
+    width: 900px;
+    height: 400px;
+}
+
+.caja {
+    width: 600px;
+    height: 800px;
+    margin: 50px;
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img1 :hover {
+    animation-name: intermitente;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes intermitente {
+    50% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+/*------------Vista Desktop Index--------------*/
 @media only screen and (min-width: 1024px) {
 
-    body {
-        background-color: rgb(0, 0, 0);
+    /* index */
+    .caja {
+        margin-left: 250px;
     }
 
-    .GridContacto {
-        display: grid;
-        grid-template-areas:
-            "header header header header header header"
-            "nav nav nav nav nav nav"
-            "contacto contacto contacto contacto contacto contacto"
-            "footer footer footer footer footer footer";
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: repeat(6, 1fr);
+    .img2 {
+        transform: translate(500px, -350px);
     }
 
-    header {
-        grid-area: header;
+    .caja2 {
+        transform: translate(800px, -1150px);
     }
-
-    nav {
-        grid-area: nav;
-    }
-
-    section {
-        grid-area: contacto;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
 }
 
-/*---------------------------Vista Tablet Contacto---------------------------*/
+/*--------------------Vista Tablet Index-----------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-@media only screen and (min-width: 768px) and (max-width:1023px) {
-
-    body {
-        background-color: rgb(0, 0, 0);
+    /* index */
+    .caja {
+        width: 400px;
+        height: 600px;
     }
 
-    .GridContacto {
-        display: grid;
-        grid-template-areas:
-            "header header header header header header"
-            "nav nav nav nav nav nav"
-            "contacto contacto contacto contacto contacto contacto"
-            "footer footer footer footer footer footer";
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: repeat(6, 1fr);
+    .img2 {
+        width: 0;
+        height: 0;
     }
 
-    header {
-        grid-area: header;
+    .caja2 {
+        transform: translate(300px, -90px);
     }
-
-    nav {
-        grid-area: nav;
-    }
-
-    section {
-        grid-area: contacto;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
 }
 
-/*----------------------Vista Mobile Contacto------------------*/
-
+/*-----Vista Mobile Index------*/
 @media only screen and (max-width: 767px) {
-    body {
-        background-color: rgb(0, 0, 0);
+    .img2 {
+        width: 0;
+        height: 0;
     }
 
-    .GridContacto {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "nav"
-            "contacto"
-            "footer ";
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
+    .caja {
+        width: 500px;
+        height: 700px;
+        margin: auto;
     }
 
-    header {
-        grid-area: header;
+    .caja2 {
+        margin: auto;
     }
 
-    nav {
-        grid-area: nav;
+    .contenedor {
+        padding-top: 40px;
     }
-
-    section {
-        grid-area: contacto;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
 }
+
+/*# sourceMappingURL=style.css.map */
