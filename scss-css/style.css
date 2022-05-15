@@ -14,6 +14,23 @@ body, .jumbotron {
   background-size: cover;
 }
 
+body, .jumbotron {
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 nav .navbar-collapse {
   justify-content: end;
 }
@@ -25,7 +42,7 @@ nav .collapse .navbar-nav .nav-item {
 
 .jumbotron {
   margin-bottom: 0px;
-  color: #b1afae;
+  color: #ffffff;
 }
 .jumbotron .container {
   font-family: "Libre Baskerville", serif;
@@ -139,12 +156,12 @@ nav .collapse .navbar-nav .nav-item {
   object-fit: cover;
 }
 
-.row .col-md-6 .a3, .row .col-md-6 .textoIframe {
+.row .col-md-6 .a3 {
   text-align: center;
   color: #b1afae;
 }
-.row .col-md-6 .textoIframe {
-  padding: 20px;
+.row .col-md-6 .titulos, .row .col-md-6 .titulos h1 {
+  padding: 40px;
 }
 .row .col-md-6 .iframe {
   width: 100%;
@@ -170,7 +187,7 @@ nav .collapse .navbar-nav .nav-item {
   margin-bottom: 30px;
   font-family: "Libre Baskerville", serif;
   line-height: 40px;
-  color: #b1afae;
+  color: #ffffff;
   overflow: hidden;
   animation-name: texto;
   animation-duration: 15s;
@@ -215,6 +232,14 @@ nav .collapse .navbar-nav .nav-item {
   }
 }
 /*---------------Discografia-------------*/
+.titulos h1, .row .col-md-6 .titulos h1 h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  color: #b1afae;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .disco {
   margin: 100px;
 }
@@ -315,7 +340,7 @@ nav .collapse .navbar-nav .nav-item {
   color: #b1afae;
   margin: 30px;
 }
-.contacto form h2 {
+.contacto form h1 {
   font-family: "Amatic SC", cursive;
   font-size: 30px;
 }
@@ -364,145 +389,6 @@ nav .collapse .navbar-nav .nav-item {
   }
   .contacto form {
     margin: 0;
-  }
-}
-/*---------INDEX--------*/
-.contenedor {
-  width: 95%;
-  height: 95%;
-}
-
-.caja2 {
-  width: 400px;
-  height: 300px;
-  background-image: url(imagenes/imagen3.jpg);
-  color: #b1afae;
-}
-
-.logoEntrada {
-  font-family: "Amatic SC", cursive;
-  font-size: 200px;
-  font-weight: 100;
-  text-align: center;
-}
-
-.enlace {
-  width: 250px;
-  height: 60px;
-  background-color: rgb(13, 139, 80);
-  margin: auto;
-}
-
-.enlace a {
-  font-family: "Amatic SC", cursive;
-  font-size: 35px;
-  color: #b1afae;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  text-align: center;
-}
-
-.enlace:hover {
-  animation-name: click;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-}
-
-@keyframes click {
-  40% {
-    -webkit-transform: scale(1.1);
-  }
-  20%, 60% {
-    -webkit-transform: scale(0.8);
-  }
-}
-.img2 {
-  width: 900px;
-  height: 400px;
-}
-
-.caja {
-  width: 600px;
-  height: 800px;
-  margin: 50px;
-}
-
-.img1 img {
-  width: 100%;
-  height: 100%;
-}
-
-.img1 :hover {
-  animation-name: intermitente;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes intermitente {
-  50% {
-    opacity: 1;
-  }
-  25%, 75% {
-    opacity: 0;
-  }
-}
-.img2 img {
-  width: 100%;
-  height: 100%;
-}
-
-/*------------Vista Desktop Index--------------*/
-@media only screen and (min-width: 1024px) {
-  /* index */
-  .caja {
-    margin-left: 250px;
-  }
-
-  .img2 {
-    transform: translate(500px, -350px);
-  }
-
-  .caja2 {
-    transform: translate(800px, -1150px);
-  }
-}
-/*--------------------Vista Tablet Index-----------*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* index */
-  .caja {
-    width: 400px;
-    height: 600px;
-  }
-
-  .img2 {
-    width: 0;
-    height: 0;
-  }
-
-  .caja2 {
-    transform: translate(300px, -90px);
-  }
-}
-/*-----Vista Mobile Index------*/
-@media only screen and (max-width: 767px) {
-  .img2 {
-    width: 0;
-    height: 0;
-  }
-
-  .caja {
-    width: 500px;
-    height: 700px;
-    margin: auto;
-  }
-
-  .caja2 {
-    margin: auto;
-  }
-
-  .contenedor {
-    padding-top: 40px;
   }
 }
 

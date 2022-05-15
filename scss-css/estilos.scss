@@ -44,6 +44,22 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+body{
+    animation-name: aparecer;
+    animation-duration:4s;
+    animation-iteration-count: 1;
+}
+@keyframes aparecer{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 nav {
     .navbar-collapse {
@@ -65,7 +81,7 @@ nav {
 .jumbotron {
     @extend body;
     margin-bottom: 0px;
-    color: map-get($map: $paleta, $key:blanco);
+    color: map-get($map: $paleta, $key:hueso);
 
     .container {
         font-family: $fuente2;
@@ -202,12 +218,12 @@ nav {
             text-align: center;
             color: map-get($map: $paleta, $key:blanco);
         }
-
-        .textoIframe {
-            @extend .a3;
-            padding: 20px;
+        .titulos{
+            padding: 40px;
+        h1{
+            @extend .titulos;
         }
-
+        }
         .iframe {
             @include WHM(100%, 400px, auto);
             margin-top: 50px;
@@ -233,7 +249,7 @@ nav {
             margin-bottom: 30px;
             font-family: $fuente2;
             line-height: 40px;
-            color: map-get($map: $paleta, $key:blanco);
+            color: map-get($map: $paleta, $key:hueso);
             @include animaciont;
         }
     }
@@ -300,6 +316,14 @@ nav {
     min-height: $minh;
 }
 
+.titulos{
+    h1{
+        @include sizes($fuente1,50px);
+        color: map-get($map: $paleta, $key: blanco);
+        margin-top: 10px;
+        text-align: center;
+    }
+}
 
 .disco {
     margin: 100px;
@@ -411,7 +435,7 @@ nav {
         color: map-get($map: $paleta, $key: blanco);
         margin: 30px;
 
-        h2 {
+        h1 {
             @include sizes($fuente1, 30px);
         }
 
@@ -470,149 +494,5 @@ nav {
         form {
             margin: 0;
         }
-    }
-}
-
-/*---------INDEX--------*/
-.contenedor {
-    @include WH(95%, 95%);
-}
-
-.caja2 {
-    @include WH(400px, 300px);
-    background-image: url(imagenes/imagen3.jpg);
-    color: map-get($map: $paleta, $key:blanco);
-}
-
-.logoEntrada {
-    @include sizes($fuente1, 200px);
-    font-weight: 100;
-    text-align: center;
-}
-
-.enlace {
-    @include WH(250px, 60px);
-    background-color: rgb(13, 139, 80);
-    margin: auto;
-
-}
-
-.enlace a {
-    @include sizes($fuente1, 35px);
-    color: map-get($map: $paleta, $key:blanco);
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    text-align: center;
-
-}
-
-.enlace:hover {
-    animation-name: click;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-
-}
-
-@keyframes click {
-    40% {
-        -webkit-transform: scale(1.1);
-    }
-
-    20%,
-    60% {
-        -webkit-transform: scale(0.8);
-    }
-}
-
-.img2 {
-    @include WH(900px, 400px);
-}
-
-.caja {
-    @include WH(600px, 800px);
-    margin: 50px;
-}
-
-.img1 img {
-    @include WH(100%, 100%);
-}
-
-.img1 :hover {
-    animation-name: intermitente;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes intermitente {
-    50% {
-        opacity: 1;
-    }
-
-    25%,
-    75% {
-        opacity: 0;
-    }
-}
-
-.img2 img {
-    @include WH(100%, 100%);
-}
-
-
-/*------------Vista Desktop Index--------------*/
-@media only screen and (min-width: 1024px) {
-
-    /* index */
-    .caja {
-        margin-left: 250px;
-    }
-
-    .img2 {
-        transform: translate(500px, -350px);
-    }
-
-    .caja2 {
-        transform: translate(800px, -1150px);
-    }
-}
-
-/*--------------------Vista Tablet Index-----------*/
-
-@media only screen and (min-width: 768px) and (max-width:1023px) {
-
-    /* index */
-    .caja {
-        @include WH(400px, 600px);
-    }
-
-    .img2 {
-        @include WH(0, 0);
-    }
-
-    .caja2 {
-        transform: translate(300px, -90px);
-    }
-}
-
-/*-----Vista Mobile Index------*/
-
-@media only screen and (max-width: 767px) {
-
-    .img2 {
-        @include WH(0, 0);
-    }
-
-    .caja {
-        @include WH(500px, 700px);
-        margin: auto;
-    }
-
-    .caja2 {
-        margin: auto;
-    }
-
-    .contenedor {
-        padding-top: 40px;
     }
 }
