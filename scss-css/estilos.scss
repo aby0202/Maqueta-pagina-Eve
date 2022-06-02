@@ -45,17 +45,20 @@ $paleta: (azul: #01070c,
     background-repeat: no-repeat;
     background-size: cover;
     animation-name: aparecer;
-    animation-duration:4s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
 }
-@keyframes aparecer{
-    0%{
-        opacity:0;
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -218,12 +221,15 @@ nav {
             text-align: center;
             color: map-get($map: $paleta, $key:blanco);
         }
-        .titulos{
+
+        .titulos {
             padding: 40px;
-        h1{
-            @extend .titulos;
+
+            h1 {
+                @extend .titulos;
+            }
         }
-        }
+
         .iframe {
             @include WHM(100%, 400px, auto);
             margin-top: 50px;
@@ -239,12 +245,13 @@ nav {
     }
 }
 
-@media only screen and (max-width:936px) and (min-width:766px){
-    .row{
-        .col-md-6{
-            .titulos{
+@media only screen and (max-width:936px) and (min-width:766px) {
+    .row {
+        .col-md-6 {
+            .titulos {
                 padding: 0;
-                p{
+
+                p {
                     font-size: 13px;
                     padding-left: 10px;
                     text-align: center;
@@ -254,11 +261,11 @@ nav {
     }
 }
 
-@media only screen and (max-width:765px){
-    .row{
-        .col-md-6{
-            .titulos{
-                p{
+@media only screen and (max-width:765px) {
+    .row {
+        .col-md-6 {
+            .titulos {
+                p {
                     color: map-get($map: $paleta, $key: hueso);
                 }
             }
@@ -303,8 +310,8 @@ nav {
         }
     }
 
-    .a3{
-        img{
+    .a3 {
+        img {
             margin-bottom: 30px;
         }
     }
@@ -539,26 +546,29 @@ nav {
 
 /*--------INDEX--------*/
 
-.index{
+.index {
     background-color: black;
     animation-name: aparecerIndex;
-    animation-duration:8s;
+    animation-duration: 8s;
     animation-iteration-count: 1;
 }
 
-@keyframes aparecerIndex{
-    0%{
-        opacity:0
+@keyframes aparecerIndex {
+    0% {
+        opacity: 0
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-.contenedorIndex{
-    @include WH(100%,auto);
+
+.contenedorIndex {
+    @include WH(100%, auto);
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -566,71 +576,81 @@ nav {
     margin-bottom: auto;
 
 }
-.containerImg{
-    @include WH(75%,auto);
+
+.containerImg {
+    @include WH(75%, auto);
     margin: auto;
     position: relative;
 }
-.containerImg img{
-    @include WH(100%,auto);
+
+.containerImg img {
+    @include WH(100%, auto);
     animation-name: intermitenteIndex;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
+
 @keyframes intermitenteIndex {
     0% {
         opacity: 0;
     }
-    25%{
+
+    25% {
         opacity: 0.5;
     }
 
     50% {
         opacity: 1;
     }
-    75%{
-        opacity:0.5;
+
+    75% {
+        opacity: 0.5;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
-.flex-container{
+
+.flex-container {
     display: flex;
     justify-content: center;
     height: 100vh;
 }
-.enlace{
+
+.enlace {
     position: absolute;
     top: 90%;
     left: 45%;
 }
 
-.enlace a:hover{
-    color:map-get($map: $paleta, $key: naranja);
-    
+.enlace a:hover {
+    color: map-get($map: $paleta, $key: naranja);
+
 }
-.enlace a{
-    color:map-get($map: $paleta, $key:naranjac );
-    font-family:$fuente1;
+
+.enlace a {
+    color: map-get($map: $paleta, $key:naranjac);
+    font-family: $fuente1;
     font-size: 40px;
     text-decoration: none;
 
 }
 
-@media only screen and (max-width: 1700px){
-    .containerImg{
+@media only screen and (max-width: 1700px) {
+    .containerImg {
         width: 85%;
     }
-} 
+}
 
-@media only screen and (max-width: 1600px){
-    .containerImg{
+@media only screen and (max-width: 1600px) {
+    .containerImg {
         width: 90%;
     }
 }
-@media only screen and (max-width: 1500px){
-    .containerImg{
+
+@media only screen and (max-width: 1500px) {
+    .containerImg {
         width: 100%;
     }
 }
